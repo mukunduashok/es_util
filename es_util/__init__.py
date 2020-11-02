@@ -19,4 +19,4 @@ NortonLifeLock copyright header start
  NortonLifeLock copyright header stop
 """
 
-from es_utils import ElasticSearchUtils
+from es_util.es_utils import ElasticSearchUtils

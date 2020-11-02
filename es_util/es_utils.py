@@ -31,7 +31,7 @@ import os
 
 class ElasticSearchUtils(object):
 
-    def __init__(self, es_user=None, es_password=None, es_host=None, es_port=None, ca_path=None, verify_certs=None):
+    def __init__(self, es_user=None, es_password=None, es_host=None, es_port=None, ca_path=None, verify_certs=False, protocol="http"):
         """
         Provide params while creating ES instance if using ES instance other than default
         :param es_user: username for custom ES
@@ -46,6 +46,7 @@ class ElasticSearchUtils(object):
         self.es_port = es_port
         self.ca_path = ca_path
         self.verify_certs = verify_certs
+        self.protocol = protocol
 
         self.es = self.connect_to_es()
 
@@ -58,7 +59,7 @@ class ElasticSearchUtils(object):
             hosts=[{'host': self.es_host, "port": self.es_port}],
             scheme=self.protocol,
             http_auth=(self.es_username, self.es_password),
-            ca_certs=self.ca_path
+            ca_certs=self.ca_path,
             verify_certs=self.verify_certs
         )
 
