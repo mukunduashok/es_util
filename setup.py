@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'elasticsearch_util',
-  packages = ['elasticsearch_util'],
+  name = 'es_util',
+  packages = ['es_util'],
   version = '0.1',
   license='MIT',
   description = 'Utility module containing helper methods for elasticsearch',
