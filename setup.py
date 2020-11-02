@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'es_util',
   packages = ['es_util'],
-  version = '0.06-alpha',
+  version = '0.07',
   license='MIT',
   description = 'Utility module containing helper methods for elasticsearch',
   author = 'Ashok M B',
   author_email = 'mukunduashok@gmail.com',
   url = 'https://github.com/mukunduashok/elasticsearch_util',
-  download_url = 'https://github.com/mukunduashok/es_util/archive/v0.06-alpha.tar.gz',
+  download_url = 'https://github.com/mukunduashok/es_util/archive/v0.07.tar.gz',
   keywords = ['elasticsearch', 'ES', 'elastic search'],
   install_requires=[
         "elasticsearch"
