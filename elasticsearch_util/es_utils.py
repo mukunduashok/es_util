@@ -31,14 +31,13 @@ import os
 
 class ElasticSearchUtils(object):
 
-    def __init__(self, es_user=None, es_password=None, es_host=None, es_port=None, environment=None, ca_path=None, verify_certs=None):
+    def __init__(self, es_user=None, es_password=None, es_host=None, es_port=None, ca_path=None, verify_certs=None):
         """
         Provide params while creating ES instance if using ES instance other than default
         :param es_user: username for custom ES
         :param es_password: password for custom ES
         :param es_host: host for custom ES
         :param es_port: port for custom ES
-        :param environment: environment for custom ES (stg/prod/dev)
         """
         # Construct credentials for ES connection
         self.es_username = es_user
